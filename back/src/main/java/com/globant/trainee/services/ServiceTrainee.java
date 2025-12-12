@@ -35,6 +35,7 @@ public class ServiceTrainee {
 
         if (optionalTrainee.isPresent()) {
             Trainee existing = optionalTrainee.get();
+            existing.setDirPicture(updatedTrainee.getDirPicture());
             existing.setFullName(updatedTrainee.getFullName());
             existing.setJobExperience(updatedTrainee.getJobExperience());
             existing.setLocation(updatedTrainee.getLocation());
@@ -44,6 +45,7 @@ public class ServiceTrainee {
             existing.setTraineeRol(updatedTrainee.getTraineeRol());
             existing.setAboutMe(updatedTrainee.getAboutMe());
             existing.setEducation((updatedTrainee.getEducation()));
+            existing.setFormation((updatedTrainee.getFormation()));
             existing.setEmail(updatedTrainee.getEmail());
             return repository.save(existing);
         }

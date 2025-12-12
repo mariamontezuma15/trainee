@@ -10,6 +10,8 @@ public class Trainee {
     private Long id;
 
     @Column(nullable = false)
+    private String dirPicture;
+    @Column(nullable = false)
     private String fullName;
     @Column(nullable = false)
     private String email;
@@ -24,13 +26,15 @@ public class Trainee {
     @Column(nullable = false)
     private String traineeRol;
     private String education;
+    private String formation;
     private String jobExperience;
     private String languages;
 
     public Trainee() {
     }
 
-    public Trainee(String fullName, String email, String phone, String aboutMe, String skills, String location,String languages,String traineeRol, String education, String jobExperience) {
+    public Trainee(String dirPicture, String fullName, String email, String phone, String aboutMe, String skills, String location,String languages,String traineeRol, String education, String formation, String jobExperience) {
+        this.dirPicture = dirPicture;
         this.fullName = fullName;
         this.email = email;
         this.phone = phone;
@@ -40,6 +44,7 @@ public class Trainee {
         this.languages = languages;
         this.traineeRol = traineeRol;
         this.education = education;
+        this.formation = formation;
         this.jobExperience = jobExperience;
     }
 
@@ -51,6 +56,14 @@ public class Trainee {
 
     public Long getId() {
         return id;
+    }
+
+    public String getDirPicture() {
+        return dirPicture;
+    }
+
+    public void setDirPicture(String dirPicture) {
+        this.dirPicture = dirPicture;
     }
 
     public String getLanguages() {
@@ -75,6 +88,14 @@ public class Trainee {
 
     public void setEducation(String education) {
         this.education = education;
+    }
+
+    public String getFormation() {
+        return formation;
+    }
+
+    public void setFormation(String formation) {
+        this.formation = formation;
     }
 
     public String getEmail() {
@@ -137,6 +158,7 @@ public class Trainee {
     public String toString() {
         return "Trainee{" +
                 "id=" + id +
+                ", dirPicture='" + dirPicture + '\'' +
                 ", fullName='" + fullName + '\'' +
                 ", email='" + email + '\'' +
                 ", phone='" + phone + '\'' +
@@ -145,7 +167,9 @@ public class Trainee {
                 ", location='" + location + '\'' +
                 ", traineeRol='" + traineeRol + '\'' +
                 ", education='" + education + '\'' +
+                ", formation='" + formation + '\'' +
                 ", jobExperience='" + jobExperience + '\'' +
+                ", languages='" + languages + '\'' +
                 '}';
     }
 }
