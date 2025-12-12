@@ -1,1 +1,1 @@
-fetch('localhost:8080/traineeapi/v1/listartrainee');
+fetch('http://localhost:8080/traineeapi/v1/listtrainee');

@@ -40,6 +40,7 @@ public class ServiceTrainee {
             existing.setLocation(updatedTrainee.getLocation());
             existing.setPhone(updatedTrainee.getPhone());
             existing.setSkills(updatedTrainee.getSkills());
+            existing.setLanguages(updatedTrainee.getLanguages());
             existing.setTraineeRol(updatedTrainee.getTraineeRol());
             existing.setAboutMe(updatedTrainee.getAboutMe());
             existing.setEducation((updatedTrainee.getEducation()));

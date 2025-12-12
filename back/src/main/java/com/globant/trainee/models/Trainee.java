@@ -25,17 +25,19 @@ public class Trainee {
     private String traineeRol;
     private String education;
     private String jobExperience;
+    private String languages;
 
     public Trainee() {
     }
 
-    public Trainee(String fullName, String email, String phone, String aboutMe, String skills, String location, String traineeRol, String education, String jobExperience) {
+    public Trainee(String fullName, String email, String phone, String aboutMe, String skills, String location,String languages,String traineeRol, String education, String jobExperience) {
         this.fullName = fullName;
         this.email = email;
         this.phone = phone;
         this.aboutMe = aboutMe;
         this.skills = skills;
         this.location = location;
+        this.languages = languages;
         this.traineeRol = traineeRol;
         this.education = education;
         this.jobExperience = jobExperience;
@@ -49,6 +51,14 @@ public class Trainee {
 
     public Long getId() {
         return id;
+    }
+
+    public String getLanguages() {
+        return languages;
+    }
+
+    public void setLanguages(String languages) {
+        this.languages = languages;
     }
 
     public String getAboutMe() {
