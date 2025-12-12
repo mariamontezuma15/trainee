@@ -9,7 +9,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 0 50px 0 2px;
+    img{
+        height: 90px;
+    }
 }
 
 button {
@@ -40,7 +43,9 @@ a {
 p {
     color: gray;
     margin: 5px;
+    font-size: 20px;
 }
+
 
 footer {
     background-color: #98D936;
@@ -55,8 +60,8 @@ footer {
     padding: 20px;
 
     img {
-        width: 90px;
-        height: 90px;
+        width: 180px;
+        height: 180px;
         object-fit: cover;
         border-radius: 50%;
 
@@ -66,7 +71,7 @@ footer {
 .card {
     background-color: white;
     border: 3px solid #98D936;
-    width: 380px;
+    width: 480px;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -80,12 +85,22 @@ footer {
 
 .name {
     color: black;
-    font-size: 22px;
+    font-size: 30px;
     font-weight: 700;
     margin-bottom: 15px;
 }
-@media (max-width: 900px) {
-    h1 {
-        display: block;
+.location {
+    img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
     }
 }
+.rol {
+    img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    }
+}
+
