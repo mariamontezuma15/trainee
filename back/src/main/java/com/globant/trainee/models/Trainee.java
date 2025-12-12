@@ -29,10 +29,26 @@ public class Trainee {
     public Trainee() {
     }
 
+    public Trainee(String fullName, String email, String phone, String aboutMe, String skills, String location, String traineeRol, String education, String jobExperience) {
+        this.fullName = fullName;
+        this.email = email;
+        this.phone = phone;
+        this.aboutMe = aboutMe;
+        this.skills = skills;
+        this.location = location;
+        this.traineeRol = traineeRol;
+        this.education = education;
+        this.jobExperience = jobExperience;
+    }
+
     public Trainee(String fullName, String location, String traineeRol) {
         this.fullName = fullName;
         this.location = location;
         this.traineeRol = traineeRol;
+    }
+
+    public Long getId() {
+        return id;
     }
 
     public String getAboutMe() {
@@ -105,5 +121,21 @@ public class Trainee {
 
     public void setTraineeRol(String traineeRol) {
         this.traineeRol = traineeRol;
+    }
+
+    @Override
+    public String toString() {
+        return "Trainee{" +
+                "id=" + id +
+                ", fullName='" + fullName + '\'' +
+                ", email='" + email + '\'' +
+                ", phone='" + phone + '\'' +
+                ", aboutMe='" + aboutMe + '\'' +
+                ", skills='" + skills + '\'' +
+                ", location='" + location + '\'' +
+                ", traineeRol='" + traineeRol + '\'' +
+                ", education='" + education + '\'' +
+                ", jobExperience='" + jobExperience + '\'' +
+                '}';
     }
 }
