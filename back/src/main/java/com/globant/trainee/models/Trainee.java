@@ -19,44 +19,20 @@ public class Trainee {
     private String aboutMe;
     @Column(nullable = false)
     private String skills;
+    @Column(nullable = false)
+    private String location;
+    @Column(nullable = false)
+    private String traineeRol;
     private String education;
     private String jobExperience;
 
     public Trainee() {
     }
 
-    public Trainee(String fullName, String email, String phone) {
+    public Trainee(String fullName, String location, String traineeRol) {
         this.fullName = fullName;
-        this.email = email;
-        this.phone = phone;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public String getFullName() {
-        return fullName;
-    }
-
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
+        this.location = location;
+        this.traineeRol = traineeRol;
     }
 
     public String getAboutMe() {
@@ -67,14 +43,6 @@ public class Trainee {
         this.aboutMe = aboutMe;
     }
 
-    public String getSkills() {
-        return skills;
-    }
-
-    public void setSkills(String skills) {
-        this.skills = skills;
-    }
-
     public String getEducation() {
         return education;
     }
@@ -83,11 +51,59 @@ public class Trainee {
         this.education = education;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
     public String getJobExperience() {
         return jobExperience;
     }
 
     public void setJobExperience(String jobExperience) {
         this.jobExperience = jobExperience;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getSkills() {
+        return skills;
+    }
+
+    public void setSkills(String skills) {
+        this.skills = skills;
+    }
+
+    public String getTraineeRol() {
+        return traineeRol;
+    }
+
+    public void setTraineeRol(String traineeRol) {
+        this.traineeRol = traineeRol;
     }
 }

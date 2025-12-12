@@ -13,7 +13,7 @@ public class ServiceTrainee {
     private ITrainee repository;
 
     public List <Trainee> listTrainee(){
-        return this.repository.findAll().stream().map(t -> new Trainee(t.getFullName(), t.getEmail(), t.getPhone())).toList();
+        return this.repository.findAll().stream().map(t -> new Trainee(t.getFullName(), t.getLocation(), t.getTraineeRol())).toList();
     }
 
 }
